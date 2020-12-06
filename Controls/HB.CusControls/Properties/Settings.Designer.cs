@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HB.CusControl.Properties
+namespace HB.CusControls.Properties
 {
     
     

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HB.CusControl
+namespace HB.CusControls
 {
     /// <summary>
     /// 按照步骤 1a 或 1b 操作，然后执行步骤 2 以在 XAML 文件中使用此自定义控件。
@@ -22,14 +22,14 @@ namespace HB.CusControl
     /// 将此 XmlNamespace 特性添加到要使用该特性的标记文件的根
     /// 元素中:
     ///
-    ///     xmlns:MyNamespace="clr-namespace:HB.CusControl"
+    ///     xmlns:MyNamespace="clr-namespace:HB.CusControls"
     ///
     ///
     /// 步骤 1b) 在其他项目中存在的 XAML 文件中使用该自定义控件。
     /// 将此 XmlNamespace 特性添加到要使用该特性的标记文件的根
     /// 元素中:
     ///
-    ///     xmlns:MyNamespace="clr-namespace:HB.CusControl;assembly=HB.CusControl"
+    ///     xmlns:MyNamespace="clr-namespace:HB.CusControls;assembly=HB.CusControls"
     ///
     /// 您还需要添加一个从 XAML 文件所在的项目到此项目的项目引用，
     /// 并重新生成以避免编译错误:
