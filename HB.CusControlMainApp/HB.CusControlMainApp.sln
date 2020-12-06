@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HB.CusControlMainApp", "HB.CusControlMainApp.csproj", "{060DB16C-C60C-4ECD-ACFC-F0358072B024}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{AC4AF152-1B86-428B-BBBF-0C8F99BEFE01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{D2BFFFD3-E10D-4158-B6F4-EDE2C0BC4DA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{FCF6BE59-2F3E-4F3F-AB59-EFFFBAC159FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HB.ViewControls", "..\Common\HB.ViewControls\HB.ViewControls.csproj", "{03E1F048-CF3D-4452-A5C9-598D7C9957F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,16 @@ Global
 		{060DB16C-C60C-4ECD-ACFC-F0358072B024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{060DB16C-C60C-4ECD-ACFC-F0358072B024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{060DB16C-C60C-4ECD-ACFC-F0358072B024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03E1F048-CF3D-4452-A5C9-598D7C9957F1} = {AC4AF152-1B86-428B-BBBF-0C8F99BEFE01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BFF6318D-EDFE-40BD-801C-897E1F9C5CDB}
