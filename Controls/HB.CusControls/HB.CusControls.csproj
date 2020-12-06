@@ -57,9 +57,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="Controls\HBTimePiker.cs" />
-    <Compile Include="CustomControl1.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
