@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{FC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HB.ViewControls", "..\Common\HB.ViewControls\HB.ViewControls.csproj", "{03E1F048-CF3D-4452-A5C9-598D7C9957F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HB.CusControls", "..\Controls\HB.CusControls\HB.CusControls.csproj", "{1877E16E-AB27-4A12-8301-78ADF78DB8FD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,17 +27,12 @@ Global
 		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03E1F048-CF3D-4452-A5C9-598D7C9957F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1877E16E-AB27-4A12-8301-78ADF78DB8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1877E16E-AB27-4A12-8301-78ADF78DB8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1877E16E-AB27-4A12-8301-78ADF78DB8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1877E16E-AB27-4A12-8301-78ADF78DB8FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{03E1F048-CF3D-4452-A5C9-598D7C9957F1} = {AC4AF152-1B86-428B-BBBF-0C8F99BEFE01}
-		{1877E16E-AB27-4A12-8301-78ADF78DB8FD} = {FCF6BE59-2F3E-4F3F-AB59-EFFFBAC159FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BFF6318D-EDFE-40BD-801C-897E1F9C5CDB}
