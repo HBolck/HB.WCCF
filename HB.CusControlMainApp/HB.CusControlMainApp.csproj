@@ -68,6 +68,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +93,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\HB.ViewControls\HB.ViewControls.csproj">
+      <Project>{03e1f048-cf3d-4452-a5c9-598d7c9957f1}</Project>
+      <Name>HB.ViewControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\HB.CusControls\HB.CusControls.csproj">
+      <Project>{0b27059b-3147-4d55-ac2e-393e63e934ea}</Project>
+      <Name>HB.CusControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

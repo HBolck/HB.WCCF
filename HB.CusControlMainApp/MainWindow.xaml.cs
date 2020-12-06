@@ -20,9 +20,22 @@ namespace HB.CusControlMainApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainWindowModel _vm;
         public MainWindow()
         {
             InitializeComponent();
+            _vm = new MainWindowModel();
+            DataContext = _vm;
+        }
+
+        /// <summary>
+        /// 测试
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            _vm.TimePickerTime = timepicker.Date.ToString("D") + timepicker.TimeSpan.ToString();
         }
     }
 }
