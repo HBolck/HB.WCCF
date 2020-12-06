@@ -75,7 +75,7 @@ namespace HB.CusControls.Controls
 
         // Using a DependencyProperty as the backing store for Hour.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty HourProperty =
-            DependencyProperty.Register("Hour", typeof(int), typeof(HBTimePiker), new PropertyMetadata(0));
+            DependencyProperty.Register("Hour", typeof(int), typeof(HBTimePiker), new PropertyMetadata(DateTime.Now.Hour));
 
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace HB.CusControls.Controls
 
         // Using a DependencyProperty as the backing store for Minute.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty MinuteProperty =
-            DependencyProperty.Register("Minute", typeof(int), typeof(HBTimePiker), new PropertyMetadata(0));
+            DependencyProperty.Register("Minute", typeof(int), typeof(HBTimePiker), new PropertyMetadata(DateTime.Now.Minute));
 
 
         /// <summary>
@@ -103,7 +103,7 @@ namespace HB.CusControls.Controls
 
         // Using a DependencyProperty as the backing store for Second.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SecondProperty =
-            DependencyProperty.Register("Second", typeof(int), typeof(HBTimePiker), new PropertyMetadata(0));
+            DependencyProperty.Register("Second", typeof(int), typeof(HBTimePiker), new PropertyMetadata(DateTime.Now.Second));
 
         #endregion
 
