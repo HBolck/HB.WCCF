@@ -27,6 +27,22 @@ namespace HB.CusControls.Controls
 
 
 
+
+        /// <summary>
+        /// 当前数值
+        /// </summary>
+        public double CurrentValue
+        {
+            get { return (double)GetValue(CurrentValueProperty); }
+            set { SetValue(CurrentValueProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CurrentValue.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CurrentValueProperty =
+            DependencyProperty.Register("CurrentValue", typeof(double), typeof(HBProgressBar), new PropertyMetadata(0));
+
+
+
         #endregion
     }
 }
