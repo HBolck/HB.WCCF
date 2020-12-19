@@ -12,6 +12,7 @@
         <Setter Property="Padding" Value="2"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
+        
     </Style>
 
     <Style TargetType="{x:Type HBc:HBTimePiker}">

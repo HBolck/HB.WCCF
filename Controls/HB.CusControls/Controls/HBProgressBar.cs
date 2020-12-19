@@ -5,11 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace HB.CusControls.Controls
 {
     public class HBProgressBar : ProgressBar
     {
+
+        static HBProgressBar()
+        {
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(HBProgressBar), new FrameworkPropertyMetadata(typeof(HBProgressBar)));
+        }
 
         #region 依赖属性
         /// <summary>
@@ -41,7 +47,18 @@ namespace HB.CusControls.Controls
         public static readonly DependencyProperty CurrentValueProperty =
             DependencyProperty.Register("CurrentValue", typeof(double), typeof(HBProgressBar), new PropertyMetadata(0));
 
+        /// <summary>
+        /// 当前值背景颜色
+        /// </summary>
+        public Brush ValueBackGroudColor
+        {
+            get { return (Brush)GetValue(ValueBackGroudColorProperty); }
+            set { SetValue(ValueBackGroudColorProperty, value); }
+        }
 
+        // Using a DependencyProperty as the backing store for ValueBackGroudColor.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ValueBackGroudColorProperty =
+            DependencyProperty.Register("ValueBackGroudColor", typeof(Brush), typeof(HBProgressBar), new PropertyMetadata(0));
 
         #endregion
     }
