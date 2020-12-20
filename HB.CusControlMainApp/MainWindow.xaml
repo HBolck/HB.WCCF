@@ -6,15 +6,14 @@
         xmlns:local="clr-namespace:HB.CusControlMainApp"
         xmlns:hbc="clr-namespace:HB.CusControls.Controls;assembly=HB.CusControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="AliceBlue">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <hbc:HBTimePiker x:Name="timepicker" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name ="test" Grid.Row="1" Content="ceshi" Click="test_Click"/>
-        <TextBlock Grid.Row="2" Text="{Binding TimePickerTime}" />
+        <hbc:HBProgressBar Value="30" Height="10" Background="#E6E6E6" ValueCornerRadius="5" />
     </Grid>
 </Window>

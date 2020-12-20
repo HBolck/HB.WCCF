@@ -18,48 +18,53 @@ namespace HB.CusControls.Controls
         }
 
         #region 依赖属性
-        /// <summary>
-        /// 是否只读
-        /// </summary>
-        public bool IsReadOnly
-        {
-            get { return (bool)GetValue(IsReadOnlyProperty); }
-            set { SetValue(IsReadOnlyProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for IsReadOnly.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty IsReadOnlyProperty =
-            DependencyProperty.Register("IsReadOnly", typeof(bool), typeof(HBProgressBar), new PropertyMetadata(false));
-
-
 
 
         /// <summary>
-        /// 当前数值
+        /// 进度值颜色
         /// </summary>
-        public double CurrentValue
+        public Brush ValueBackGroud
         {
-            get { return (double)GetValue(CurrentValueProperty); }
-            set { SetValue(CurrentValueProperty, value); }
+            get { return (Brush)GetValue(ValueBackGroudProperty); }
+            set { SetValue(ValueBackGroudProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for CurrentValue.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty CurrentValueProperty =
-            DependencyProperty.Register("CurrentValue", typeof(double), typeof(HBProgressBar), new PropertyMetadata(0));
+        // Using a DependencyProperty as the backing store for ValueBackGroud.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ValueBackGroudProperty =
+            DependencyProperty.Register("ValueBackGroud", typeof(Brush), typeof(HBProgressBar), 
+                new PropertyMetadata(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00CC33"))));
+
+
 
         /// <summary>
-        /// 当前值背景颜色
+        /// 进度值圆角
         /// </summary>
-        public Brush ValueBackGroudColor
+        public double ValueCornerRadius
         {
-            get { return (Brush)GetValue(ValueBackGroudColorProperty); }
-            set { SetValue(ValueBackGroudColorProperty, value); }
+            get { return (double)GetValue(ValueCornerRadiusProperty); }
+            set { SetValue(ValueCornerRadiusProperty, value); }
         }
 
-        // Using a DependencyProperty as the backing store for ValueBackGroudColor.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty ValueBackGroudColorProperty =
-            DependencyProperty.Register("ValueBackGroudColor", typeof(Brush), typeof(HBProgressBar), new PropertyMetadata(0));
+        // Using a DependencyProperty as the backing store for ValueCornerRadius.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ValueCornerRadiusProperty =
+            DependencyProperty.Register("ValueCornerRadius", typeof(double), typeof(HBProgressBar), new PropertyMetadata(0.0));
+
+
+
+        public HBProgressBar()
+        {
+        }
 
         #endregion
+
+
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+        }
     }
 }

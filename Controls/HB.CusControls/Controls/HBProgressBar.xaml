@@ -6,11 +6,18 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type HBc:HBProgressBar}">
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-                        <Border Grid.Column="0" Background="{TemplateBinding Background}"/>
+                        <Border CornerRadius="0" Name="PART_Track"
+                                    BorderThickness="0"
+                                    Background="{TemplateBinding Background}" />
+                        <Border x:Name="PART_Indicator"
+                                    BorderThickness="1" 
+                                    HorizontalAlignment="Left"
+                                    CornerRadius="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                        AncestorType={x:Type HBc:HBProgressBar}},Path=ValueCornerRadius}"
+                                    Background="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                        AncestorType={x:Type HBc:HBProgressBar}},Path=ValueBackGroud}">
+                            
+                        </Border>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
