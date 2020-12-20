@@ -64,6 +64,8 @@
     <Compile Include="Controls\HBTimePiker.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\HBTextButton.cs" />
+    <Compile Include="ElementUtils\ElementBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

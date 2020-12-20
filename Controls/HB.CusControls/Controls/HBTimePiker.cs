@@ -13,8 +13,7 @@ namespace HB.CusControls.Controls
 
         static HBTimePiker()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(HBTimePiker), new FrameworkPropertyMetadata(typeof(HBTimePiker)));
-
+            ElementUtils.ElementBase.SetDefalueStyle<HBTimePiker>(DefaultStyleKeyProperty);
         }
 
         #region 依赖属性

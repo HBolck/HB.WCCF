@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HB.CusControls.ElementUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace HB.CusControls.Controls
 
         static HBProgressBar()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(HBProgressBar), new FrameworkPropertyMetadata(typeof(HBProgressBar)));
+            ElementBase.SetDefalueStyle<HBProgressBar>(DataContextProperty);
         }
 
         #region 依赖属性
