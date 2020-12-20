@@ -9,15 +9,13 @@
                         <Border CornerRadius="0" Name="PART_Track"
                                     BorderThickness="0"
                                     Background="{TemplateBinding Background}" />
-                        <Border x:Name="PART_Indicator"
-                                    BorderThickness="1" 
+
+                        <Border BorderThickness="1" x:Name="PART_Indicator"
                                     HorizontalAlignment="Left"
                                     CornerRadius="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
                                         AncestorType={x:Type HBc:HBProgressBar}},Path=ValueCornerRadius}"
                                     Background="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
-                                        AncestorType={x:Type HBc:HBProgressBar}},Path=ValueBackGroud}">
-                            
-                        </Border>
+                                        AncestorType={x:Type HBc:HBProgressBar}},Path=ValueBackGroud}"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
