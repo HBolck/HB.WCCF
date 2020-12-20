@@ -2,5 +2,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/HB.CusControls;component/Controls/HBTimePiker.xaml"/>
         <ResourceDictionary Source="/HB.CusControls;component/Controls/HBProgressBar.xaml"/>
+        <ResourceDictionary Source="/HB.CusControls;component/Controls/HBTextButton.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace HB.CusControls
+namespace HB.CusControls.Controls
 {
     public class HBTextButton : Button
     {
@@ -15,5 +15,17 @@ namespace HB.CusControls
         {
             ElementBase.SetDefalueStyle<HBTextButton>(DataContextProperty);
         }
+
+        public string TextContent
+        {
+            get { return (string)GetValue(TextContentProperty); }
+            set { SetValue(TextContentProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for TextContent.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TextContentProperty =
+            DependencyProperty.Register("TextContent", typeof(string), typeof(HBTextButton), new PropertyMetadata(""));
+
+
     }
 }

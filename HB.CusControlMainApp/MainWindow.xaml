@@ -16,5 +16,6 @@
         </Grid.RowDefinitions>
         <hbc:HBProgressBar Grid.Row="0" Value="30" Height="10" Background="#E6E6E6" ValueCornerRadius="5" />
         <hbc:HBTimePiker Grid.Row="1"/>
+        <hbc:HBTextButton Grid.Row="2" Height="10" Content="123"/>
     </Grid>
 </Window>
