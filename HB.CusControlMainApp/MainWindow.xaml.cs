@@ -35,7 +35,7 @@ namespace HB.CusControlMainApp
         /// <param name="e"></param>
         private void test_Click(object sender, RoutedEventArgs e)
         {
-            _vm.TimePickerTime = timepicker.Date.ToString("D") + timepicker.TimeSpan.ToString();
+            //_vm.TimePickerTime = timepicker.Date.ToString("D") + timepicker.TimeSpan.ToString();
         }
     }
 }
